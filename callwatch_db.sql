@@ -23,7 +23,7 @@ Nombre varchar(50) not null,
 Usuario varchar(25) not null,
 Email varchar(50) not null unique,
 Password varchar(250) not null,
-Imagen longblob,
+Imagen text(200),
 IdCategory int,
 constraint FK_IdCategory foreign key (IdCategory) references category(ID) 
 );
@@ -94,7 +94,7 @@ create table Products(
 ID int primary key not null auto_increment,
 Nombre varchar(100) not null,
 Descripcion text not null,
-Imagen longblob,
+Imagen text(200),
 Precio int not null,
 IdColor int,
 IdTalle int,
