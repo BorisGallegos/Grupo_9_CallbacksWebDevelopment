@@ -160,6 +160,17 @@ values ( 1, 13),
 ( 11, 3);
 
 
+/* select productt_id , nombre, descripcion, imagen, precio, category_product_id, talle_id 
+from product_talle pt  
+inner join talle t  on talle_id = t.id 
+inner join product p on productt_id = p.id */
+
+
+/* select product_id , nombre, descripcion, imagen, precio, category_product_id, color_id 
+from product_color pc  
+inner join color c  on color_id = c.id 
+inner join product p on product_id = p.id
+order by product_id */ 
 
 
 
